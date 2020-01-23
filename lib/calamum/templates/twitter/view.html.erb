@@ -60,6 +60,22 @@
             </div>
           </div>
 
+          <% if @resource.body %>
+            <div class="field">
+              <h2>Body</h2>
+              <div class="odd">
+                <% @resource.body.each do |key, content| %>
+                  <div class="parameter">
+                    <span class="param"><%= key %>
+                      <span><%= content['required'] ? 'required' : 'optional' %>, type: <%= content['type'] %></span>
+                    </span>
+                    <p><%= content['description'] %></p>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+          <% end %>
+
           <% if @resource.request %>
             <div class="group-example-request">
               <h2>Example Request</h2>
