@@ -40,6 +40,8 @@ class Calamum::Resource
       'label-info'
     when 'POST'
       'label-success'
+    when 'PATCH'
+      'label-warning'
     when 'PUT'
       'label-warning'
     when 'DELETE'
