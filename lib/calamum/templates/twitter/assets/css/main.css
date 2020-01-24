@@ -168,7 +168,7 @@ small {
     font-size: 0.8em;
 }
 h1 {
-    font-size: 2.3em;
+    font-size: 2.2em;
     font-weight: 300;
 }
 h2, legend, caption {
@@ -673,7 +673,7 @@ div.field h2 {
     border-bottom: 0;
 }
 .api-docs .views-field-title {
-    width: 45%;
+    width: 50%;
 }
 .api-docs tr.protected td.views-field-title a {
     padding-left: 18px;
